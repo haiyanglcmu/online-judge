@@ -1,0 +1,9 @@
+extends ../layouts/admin.html
+
+block content
+  h1= title
+  form(action='/problem/update', method='put')
+    div
+        textarea(rows='30', cols='60', name='code')
+    input(type='submit', value='submit')
+

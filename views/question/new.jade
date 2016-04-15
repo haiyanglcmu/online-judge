@@ -1,0 +1,16 @@
+extends ../layouts/admin.html
+
+block content
+  include ../includes/message.html
+  form(action='/problem', method='post')
+    p Problem Description:
+    div
+        textarea(rows='10', cols='80', name='description')
+    p Template:
+    div
+      textarea(rows='10', cols='80', name='template')
+    p Add Test:
+    div
+      textarea(rows='20', cols='80', name='testScript')
+    input(type='submit', value='submit')
+

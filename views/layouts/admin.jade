@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block extraHeader
+  body
+    include ../includes/sidebar
+    div.page-wrapper
+      block content
+    block scripts
